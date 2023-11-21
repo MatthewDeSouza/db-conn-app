@@ -1,17 +1,19 @@
 package com.github.matthewdesouza.dbconnapp.db;
 
 import com.github.matthewdesouza.dbconnapp.db.model.Person;
+import com.github.matthewdesouza.dbconnapp.db.model.Major;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class DatabaseConnector {
-    private static final String MYSQL_SERVER_URL = "jdbc:mysql://localhost:3306/";
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/project";
+    // Azure credits have run out, so I'm using a local MariaDB server instead.
+    private static final String MYSQL_SERVER_URL = "jdbc:mariadb://localhost:3306/";
+    private static final String DB_URL = "jdbc:mariadb://localhost:3306/project";
     private static final String DB_NAME = "project";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "mysql";
+    private static final String PASSWORD = "mariadb";
 
     // Singleton instance
     private static DatabaseConnector instance;
@@ -31,8 +33,6 @@ public class DatabaseConnector {
 
     private void connectToDatabase() {
         try {
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-
             //First, connect to MYSQL server and create the database if not created
             try (Connection conn = DriverManager.getConnection(MYSQL_SERVER_URL, USERNAME, PASSWORD);
                  Statement statement = conn.createStatement()) {
@@ -48,7 +48,7 @@ public class DatabaseConnector {
                             + "firstName VARCHAR(200) NOT NULL,"
                             + "lastName VARCHAR(200) NOT NULL,"
                             + "dept VARCHAR(200),"
-                            + "major VARCHAR(200)"
+                            + "major ENUM(" + Major.getMajorStrings() +")"
                             + ")";
                     statement2.executeUpdate(sql);
                 }
@@ -70,7 +70,7 @@ public class DatabaseConnector {
                 String firstName = resultSet.getString("firstName");
                 String lastName = resultSet.getString("lastName");
                 String dept = resultSet.getString("dept");
-                String major = resultSet.getString("major");
+                Major major = Major.valueOf(resultSet.getString("major"));
 
                 people.add(new Person(id, firstName, lastName, dept, major));
             }
@@ -88,7 +88,7 @@ public class DatabaseConnector {
                 preparedStatement.setString(1, person.getFirstName());
                 preparedStatement.setString(2, person.getLastName());
                 preparedStatement.setString(3, person.getDept());
-                preparedStatement.setString(4, person.getMajor());
+                preparedStatement.setString(4, person.getMajor().toString());
 
                 int row = preparedStatement.executeUpdate();
 
@@ -110,7 +110,7 @@ public class DatabaseConnector {
             preparedStatement.setString(1, person.getFirstName());
             preparedStatement.setString(2, person.getLastName());
             preparedStatement.setString(3, person.getDept());
-            preparedStatement.setString(4, person.getMajor());
+            preparedStatement.setString(4, person.getMajor().toString());
             preparedStatement.setInt(5, person.getId());
 
             preparedStatement.executeUpdate();
