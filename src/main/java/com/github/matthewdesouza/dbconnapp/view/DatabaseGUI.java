@@ -71,6 +71,7 @@ public class DatabaseGUI implements Initializable {
 
         tv.setItems(data);
 
+        addButton.setDisable(true);
         editButton.setDisable(true);
         deleteButton.setDisable(true);
 

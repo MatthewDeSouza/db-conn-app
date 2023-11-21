@@ -97,11 +97,11 @@
                                 <Insets left="10.0" right="10.0" top="5.0"/>
                             </VBox.margin>
                         </TextField>
-                        <TextField fx:id="major" promptText="Major">
+                        <ComboBox fx:id="major" promptText="Major">
                             <VBox.margin>
                                 <Insets left="10.0" right="10.0" top="5.0"/>
                             </VBox.margin>
-                        </TextField>
+                        </ComboBox>
                         <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#clearForm" styleClass="nav_btn"
                                 text="Clear">
                             <VBox.margin>

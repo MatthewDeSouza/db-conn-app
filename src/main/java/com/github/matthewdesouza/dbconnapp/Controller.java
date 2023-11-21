@@ -29,43 +29,42 @@ public class Controller extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage primaryStage) {
         hostServices = getHostServices();
         Application.setUserAgentStylesheet(new CupertinoDark().getUserAgentStylesheet());
-        // Load the splash screen
-        Parent splashRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/splash_screen.fxml")));
-        Stage splashStage = new Stage();
-        splashStage.initStyle(StageStyle.UNDECORATED); // No title bar
-        splashStage.setScene(new Scene(splashRoot));
 
-        // Ensure the splash screen is always on top and centered
-        splashStage.setAlwaysOnTop(true);
-        splashStage.centerOnScreen();
+        try {
+            // Load the splash screen
+            Parent splashRoot = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("fxml/splash_screen.fxml")));
+            Stage splashStage = new Stage(StageStyle.UNDECORATED); // No title bar
+            splashStage.setScene(new Scene(splashRoot));
+            splashStage.setAlwaysOnTop(true);
+            splashStage.centerOnScreen();
+            splashStage.show();
 
-        splashStage.show();
-
-        // Add a 1.5-second delay
-        PauseTransition delay = new PauseTransition(Duration.seconds(1.5));
-        delay.setOnFinished(event -> {
-            // Load the main scene
-            loadMainScene(primaryStage, splashStage, event);
-        });
-        delay.play();
+            // Add a 1.5-second delay
+            PauseTransition delay = new PauseTransition(Duration.seconds(1.5));
+            delay.setOnFinished(event -> {
+                splashStage.close(); // Close the splash screen
+                loadMainScene(primaryStage); // Load the main scene
+            });
+            delay.play();
+        } catch (IOException e) {
+            e.printStackTrace(); // Log the exception
+            // Handle the error (e.g., show an error dialog)
+        }
     }
 
-    private void loadMainScene(Stage primaryStage, Stage splashStage, ActionEvent event) {
-        FXMLLoader fxml = new FXMLLoader(Objects.requireNonNull(getClass().getResource("fxml/db_interface_gui.fxml")));
+    private void loadMainScene(Stage primaryStage) {
         try {
-            Scene mainScene = new Scene(fxml.load(), 807, 535);
+            FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("fxml/db_interface_gui.fxml")));
+            Scene mainScene = new Scene(fxmlLoader.load(), 807, 535);
             primaryStage.setScene(mainScene);
             primaryStage.setResizable(false);
-
-            // Close the splash screen and show the main window
-            splashStage.close();
             primaryStage.show();
         } catch (IOException e) {
-            AlertBox alertBox = new AlertBox(AlertType.ERROR, "Error loading main scene.\nMessage:\n" + e.getMessage());
-            alertBox.showAndWait();
+            e.printStackTrace(); // Log the exception
+            // Handle the error (e.g., show an error dialog)
         }
     }
 }

@@ -48,12 +48,15 @@ public enum Major {
      * Returns all major string, separated by commas
      * @return String of all major strings
      */
-    public static String getMajorStrings() {
+    public static String getMajorStringsSQLFormat() {
         StringBuffer sb = new StringBuffer();
-        for (Major m : getMajors()) {
-            sb.append(m.toString());
+        for (Major m : Major.getMajors()) {
+            sb.append("'");
+            sb.append(m.name());
+            sb.append("'");
             sb.append(", ");
         }
+        sb.delete(sb.length() - 2, sb.length()); // Remove trailing comma and space
         return sb.toString();
     }
 }

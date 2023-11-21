@@ -48,7 +48,7 @@ public class DatabaseConnector {
                             + "firstName VARCHAR(200) NOT NULL,"
                             + "lastName VARCHAR(200) NOT NULL,"
                             + "dept VARCHAR(200),"
-                            + "major ENUM(" + Major.getMajorStrings() +")"
+                            + "major ENUM(" + Major.getMajorStringsSQLFormat() +")"
                             + ")";
                     statement2.executeUpdate(sql);
                 }
@@ -88,7 +88,7 @@ public class DatabaseConnector {
                 preparedStatement.setString(1, person.getFirstName());
                 preparedStatement.setString(2, person.getLastName());
                 preparedStatement.setString(3, person.getDept());
-                preparedStatement.setString(4, person.getMajor().toString());
+                preparedStatement.setString(4, person.getMajor().name());
 
                 int row = preparedStatement.executeUpdate();
 
@@ -110,7 +110,7 @@ public class DatabaseConnector {
             preparedStatement.setString(1, person.getFirstName());
             preparedStatement.setString(2, person.getLastName());
             preparedStatement.setString(3, person.getDept());
-            preparedStatement.setString(4, person.getMajor().toString());
+            preparedStatement.setString(4, person.getMajor().name());
             preparedStatement.setInt(5, person.getId());
 
             preparedStatement.executeUpdate();
