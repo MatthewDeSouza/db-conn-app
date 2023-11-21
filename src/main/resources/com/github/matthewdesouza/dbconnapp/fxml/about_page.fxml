@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="106.0" prefWidth="302.0" stylesheets="@../css/font.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.matthewdesouza.dbconnapp.view.AboutPage">
+    <VBox prefHeight="150.0" prefWidth="108.0">
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <ImageView fitHeight="67.0" fitWidth="76.0" layoutX="14.0" layoutY="20.0" onMouseClicked="#openUrl" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../image/github-logo.png" />
+            </ImageView>
+        </AnchorPane>
+    </VBox>
+    <AnchorPane prefHeight="123.0" prefWidth="224.0">
+        <Label layoutX="39.0" layoutY="36.0" text="Database Manager" />
+        <Label layoutX="8.0" layoutY="48.0" text="Created by: Matthew DeSouza" />
+        <Label layoutX="55.0" layoutY="62.0" text="MIT License" />
+        <Label layoutX="64.0" layoutY="24.0" text="CSC 311" />
+    </AnchorPane>
+</HBox>

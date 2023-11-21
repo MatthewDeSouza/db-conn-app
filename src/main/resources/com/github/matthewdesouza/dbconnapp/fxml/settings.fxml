@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+         prefWidth="600.0" stylesheets="../css/font.css" tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.github.matthewdesouza.dbconnapp.view.Settings">
+    <tabs>
+        <Tab text="General">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+            </content>
+        </Tab>
+        <Tab text="Themes">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <ChoiceBox layoutX="300.0" layoutY="106.0" prefWidth="150.0" fx:id="themeChoiceBox"/>
+                        <Label layoutX="118.0" layoutY="110.0" text="Change Theme"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="About">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

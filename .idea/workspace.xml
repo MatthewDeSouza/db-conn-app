@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="74048a86-ab58-456d-b7e2-49a5a3005ffc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/db/DatabaseConnector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/db/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/gui/AboutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/gui/AlertBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/gui/AlertBoxController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/gui/AlertType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/gui/DatabaseGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/gui/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment/gui/SplashScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/css/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/fxml/about_page.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/fxml/alert_box.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/fxml/db_interface_gui.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/fxml/settings.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/fxml/splash_screen.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2WvJJ3mjXcUIQyrRHq0OipmDNoV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/matt/IdeaProjects/week-six-assignment&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/image" />
+      <recent name="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/fxml" />
+      <recent name="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/com/github/matthewdesouza/weeksixassignment/fonts/open-sans" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/github/matthewdesouza/weeksixassignment" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="528fddde-1160-4bc4-961f-28b142d247ef" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.github.matthewdesouza.weeksixassignment.App" />
+      <module name="week-six-assignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.matthewdesouza.weeksixassignment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74048a86-ab58-456d-b7e2-49a5a3005ffc" name="Changes" comment="" />
+      <created>1697607046066</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697607046066</updated>
+      <workItem from="1697607047313" duration="12680000" />
+      <workItem from="1697619815290" duration="51000" />
+      <workItem from="1697619877274" duration="1347000" />
+      <workItem from="1697681921355" duration="2289000" />
+      <workItem from="1697688635398" duration="1930000" />
+      <workItem from="1697694495873" duration="12945000" />
+      <workItem from="1697769090835" duration="2634000" />
+      <workItem from="1698033505534" duration="598000" />
+      <workItem from="1698036728573" duration="3100000" />
+      <workItem from="1698115336372" duration="2697000" />
+      <workItem from="1698375436646" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
